@@ -2,5 +2,6 @@
 .class
 
 build/
+bin/
 
 /.metadata/
