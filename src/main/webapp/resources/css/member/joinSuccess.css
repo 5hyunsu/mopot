@@ -1,0 +1,54 @@
+/* Font */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 전체 CSS */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#success_text {
+    margin: 5%;
+    text-align: center;
+}
+
+#success_img {
+    content: url("../../img/img3.jpeg");
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+#success_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sbtn {
+    position:relative;
+    left:8%;
+    transform: translateX(-50%);
+    margin: 10%;
+    width:100px;
+    height:30px;
+    background: #7C96C9;
+    color:white;
+    border:none;
+    border-radius: 5px;
+}
+
+.sbtn:active {
+    background-color: #5872A5;
+}

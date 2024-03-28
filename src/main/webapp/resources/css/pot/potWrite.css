@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 페이지 전체 적용 */
+* {
+    width: 100%;
+    /*margin: 0 auto;*/
+    font-family: 'GmarketSansMedium';
+}
+
+.potContentForm {
+    margin: 3% 4% 130px;
+    margin-left: 250px;
+}
+
+/* 글 작성 폼 */
+#writeForm {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    /*border-top: 2px solid #5872A5;*/
+}
+
+/* 글 작성 항목 */
+h4 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* 상단 첫번째 (말머리 제목) */
+.potWriteFormHead {
+    text-align: center;
+    width: 90%;
+    padding: 0px;
+}
+
+/* 상단 첫번째 왼쪽 = 말머리 */
+.potWriteFormHeadLeft{
+    float: left;
+    width:25%;
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* 말머리 select */
+.potCategory {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
+
+    font-size: 14px;
+}
+
+/* 상단 첫번째 오른쪽 = 제목 */
+.potWriteFormHeadRight {
+    float: left;
+    width: 62%;
+    padding: 0px;
+    text-align: left;
+    resize: none;
+}
+
+/* 제목 입력창 */
+.potTitle {
+    width: 90%;
+    height: 25px;
+    resize: none;
+
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: 14px;
+    background: none;
+    outline: none;
+}
+
+/* 폼 입력 중간 = 내용 */
+.potWriteFormBody {
+    width: 90%;
+    text-align: left;
+    clear: both;
+}
+
+/* 내용 입력창 */
+.potDetail{
+    text-align: left;
+    width: 92%;
+    resize: none;
+}
+
+/* 임시 - 작성자 */
+.potWriter {
+    width: 90%;
+}
+
+#potWriter {
+    text-align: left;
+    width: 30%;
+    resize: none;
+
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    background: none;
+    outline: none;
+    z-index: 1;
+}
+
+/* 폼 입력 하단 = 태그 */
+.writeFormTag{
+    width: 90%;
+    text-align: left;
+}
+
+/* 태그 입력창 */
+.conTag{
+    text-align: left;
+    width: 70%;
+    resize: none;
+
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    position: relative;
+    background: none;
+    outline: none;
+}
+
+.potTotalHeadcount, .potNowHeadcount {
+    width: 10%;
+}
+
+.potEndTime, .potStartTime, .potPlace {
+    width: 30%;
+}
+
+/* 작성, 초기화 취소 버튼 */
+.potWriteFromFoot {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+
+.write-btn, .reset-btn, .list-btn {
+    position:relative;
+    left:35%;
+    transform: translateX(-50%);
+    margin: 10px;
+    width:80px;
+    height:30px;
+    background: #7C96C9;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.write-btn:active, .reset-btn:active, .list-btn:active {
+    background-color: #5872A5;
+}
+
+/* 글 작성 내용이 비었을 때 경고창 */
+.swal2-icon-content {
+    margin-left: 22px;
+    margin-top: 5px;
+}

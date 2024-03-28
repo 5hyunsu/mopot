@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 전체 CSS */
+header {
+	display: block;
+	text-decoration: none;
+	font-family: 'GmarketSansMedium';
+	font-size: 15px;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* 헤더 전체 크기 */
+.headerAll {
+	width: 100%;
+	margin: 20px;
+}
+
+/* main 로고 */
+.navbar-brand {
+	font-size: 20px;
+	margin: 10px;
+	color: black;
+}
+
+/* 팟 구하기, 자유게시판 항목 */
+.nav-item {
+	text-align: center;
+	margin-right: 20%;
+}
+
+.nav-item a {
+	margin-right: 8%;
+}
+
+.nav-item a:link, a:visited { color: black }
+.nav-item a:active { color: #5872A5 }
+
+/* 로그인, 로그아웃 */
+#head-icon {
+	text-align: right;
+	margin-right: 3%;
+}
+
+#head-icon a {
+	margin-right: 5%;
+}
+
+#head-welcome {
+	text-align: right;
+	margin-right: 4%;
+}
+
+#head-icon a:link, a:visited { color: black }
+#head-icon a:active { color: #5872A5 }

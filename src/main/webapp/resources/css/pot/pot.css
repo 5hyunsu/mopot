@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* Font */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 페이지 전체 적용 */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*  Title : 팟 리스트(모음) */
+.pot-title{
+	width: 100%;
+	padding-left:100px;
+	padding-right:100px;
+	text-align: center;
+}
+/*  총 게시물 수 : */
+.pot-count{
+	padding-left:100px;
+	padding-right:150px;
+	text-align: right;
+}
+
+.content-foot-head{
+	padding-left:100px;
+	padding-right:100px;
+}
+
+.title{
+	width: 100%;
+}
+
+
+/* 플렉스 적용 부분 */
+
+/* 컨테이너에 해당하는 클래스에 스타일 적용 */
+.potContent_List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 16px; /* 항목 사이의 간격 */
+    border-radius: 16px;
+    justify-content: flex-start; 
+}
+
+/* 각 아이템(카드)에 해당하는 클래스에 스타일 적용 */
+.item {
+    flex: 0 1 calc(23% - 30px); /* 3개의 항목을 한 줄에 표시, 각 항목 사이의 간격을 고려하여 계산 */
+    display: flex;
+    flex-direction: column; /* 항목 내부의 정렬 방향을 세로로 설정 */
+    align-items: center; /* 항목 내부 콘텐츠를 가운데 정렬 */
+    border: 1px solid #ddd; /* 경계선 설정 */
+    border-radius: 13px; /* 경계선 둥글게 */
+    padding: 16px; /* 내부 여백 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    background-color: #fff; /* 배경색 */
+    margin-bottom: 16px; /* 아래쪽 여백 */
+}
+
+/* 반응형 디자인을 위해 미디어 쿼리 추가 */
+@media (max-width: 768px) {
+    .item {
+        flex: 0 1 calc(50% - 32px); /* 화면 크기가 768px 이하일 때는 2개의 항목을 한 줄에 표시 */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        flex: 0 1 calc(100% - 32px); /* 화면 크기가 480px 이하일 때는 1개의 항목을 한 줄에 표시 */
+    }
+}
+
+
+
+/* 폼 리스트 시작 */
+#pot-body{
+	display: block;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left:100px;
+	padding-right:100px;
+}
+.maincontent_main{
+	
+}
+/* 리스트 출력 부분 */
+/* (1)(2) 팟 헤드 (번호, 카테고리) */
+/* (1)(2) 전체 */
+.potHead {
+	width: 246px;
+	height:26px;
+}
+/* (1) 번호 */
+.potNo{
+	float: left;
+}
+
+
+
+/* (2) 카테고리 */
+.potCategory{
+	float: right;
+}
+
+/* (3)(4) 팟 내용 (제목, 내용) */
+/* (3)(4) 전체 */
+.potTitleDetail{
+	width: 246px;
+	height:65px;
+	padding-bottom: 15px;
+}
+/* (3) 팟 제목 */
+.potTitle{
+	width: 246px;
+	display: -webkit-box;
+	word-wrap: break-word;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+/* (4) 팟 내용 */
+.potDetail{
+	width: 246px;
+	display: -webkit-box;
+	word-wrap: break-word;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* (5) 작성자 + @ */
+.potWriter{
+	padding-top: 10px;
+}
+
+/* (6)(주석) 팟 작성 날짜, 수정 날짜 */
+/* (6) 작성 날짜 */
+.potCreate{}	
+/* (주석) 수정 날짜 */
+.potModify{}
+	
+/* (7)(8) 팟 인원수 ( 신청자수 / 총인원수) */
+.potCount{
+	width: 100%;
+	font-size: 12px;
+}
+/* (7) 현재 인원수 */
+.potNowHeadcount{
+	text-align: center;
+}
+.pot{
+	width: 100%;
+	/* float: left; */
+}
+/* (8) 총 인원수 */
+.potTotalHeadcount{
+	/* float: left; */
+}
+
+/* (9)(10)팟 시간 (시작시간 / 마감시간) */
+.potStartEndTime{
+	font-size: 12px;
+}
+/* (9) 시작시간 */
+.potStartTime{
+	float: left;
+}
+/* (10) 마감시간 */
+.potEndTime{
+	float: left;
+}
+/* (11)(@) 모임장소 + 기타 */
+	/* 팟 장소 */
+.potPlace{
+	
+}
+
+/* 하단 목록보기, 모두팟 작성하기 버튼 */
+.write-wrap{
+	width: 100%;
+	padding-left:100px;
+	padding-right:100px;
+}
