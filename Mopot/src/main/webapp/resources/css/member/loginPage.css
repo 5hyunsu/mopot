@@ -1,0 +1,107 @@
+/* Font */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 전체 CSS */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 로그인 Form */
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+/* 로그인 Form - 제목 */
+.loginForm h2 {
+    margin-bottom: 20px;
+}
+
+/* 입력정보 - id, pw */
+.login_text {
+    text-align: left;
+    position: relative;
+    margin-bottom: 10px;
+    width: 300px;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 10px 10px;
+}
+
+/* 정보 입력창 */
+.login_text input {
+    font-size: 13px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    background: none;
+    outline: none;
+    z-index: 1;
+}
+
+/* 로그인 필요 정보명 */
+.login_text label {
+    position: absolute;
+    color: black;
+    left: -100px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Button */
+.login_button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sub {
+    position:relative;
+    left:8%;
+    transform: translateX(-50%);
+    margin: 10px;
+    width:100px;
+    height:30px;
+    background: #7C96C9;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.sub:active {
+    background-color: #5872A5;
+}
+
+/* 회원가입 이동 */
+.joinPage_a {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 13px;
+}
+
+.joinPage_a > a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+}
+
+.joinPage_a a:active {
+    color: #5872A5;
+}

@@ -1,0 +1,225 @@
+/* Font */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 페이지 전체 적용 */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Title : 자유게시판 */
+.content-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 총 게시물 수 : */
+.content-count {
+    text-align: right;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+/* 테이블 전체 적용 */
+.content-table {
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover { color: #5872A5; }
+
+/* 테이블 상단 (헤드) */
+.content-table-head {
+    border-top: 2px solid #7C96C9;
+    border-bottom: 2px solid #7C96C9;
+    color: black;
+}
+
+/* 테이블 상단 (0) 공지 */
+.content-table-body-Notice {
+    background-color: #C2E2E8;
+}
+
+/* 테이블 상단 (1) 번호 */
+.conNo {
+    /*width: 10%;*/
+    text-align: center;
+}
+/* 테이블 상단 (2) 타이틀 + [댓글 수] */
+.conTitle {
+    /*width: 40%;*/
+}
+/* 테이블 상단 (3) 작성자 */
+.conWriter {
+    /*width: 15%;*/
+    text-align: center;
+}
+/* 테이블 상단 (4) 작성 날짜  */
+.conCreate {
+    /*width:15%;*/
+    text-align: center;
+}
+/* 테이블 상단 (5) 조회수 */
+.conCount {
+    /*width:20%;*/
+    text-align: center;
+}
+/* 2. 리스트 출력 부분 */
+
+/* 리스트 행, 열 */
+table th, td {
+    border-bottom: 1px solid #A0BAED;
+    padding: 10px;
+    font-weight: noremal;
+    border-left: none;
+    border-right: none;
+}
+
+/* 리스트에 마우스 올렸을 때 hover */
+tbody tr:hover {
+    background-color: #FAFFFF;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* 하단 전체 */
+#content-foot {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 1. 검색파트 */
+.content-foot-head .search-wrap {
+    padding: 10px 15px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    /* border-top: 2px solid #7C96C9; */
+    border-bottom: 2px solid #7C96C9;
+}
+
+/* (1) 제목, 검색 select option */
+#search-select {
+    position: relative;
+    margin: 0 auto;
+    width: 56px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+/* 검색 입력창 */
+input {
+    font-size: 13px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    background: none;
+    outline: none;
+    z-index: 1;
+}
+
+/* (2) 하단 검색 버튼 */
+.search-btn {
+    position:relative;
+    left:3%;
+    transform: translateX(-50%);
+    margin: 10px;
+    width:50px;
+    height:25px;
+    background: #7C96C9;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.search-btn:active {
+    background-color: #5872A5;
+}
+
+/* 2. 전체목록보기, 글 작성하기 */
+.content-foot-body {
+    /* background-color: #f9f7f9; */
+    border-top: 2px solid #7C96C9;
+    padding: 10px 15px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* 목록보기 + 글작성하기 버튼 */
+.write-wrap {
+    text-align: right;
+    margin-right: 3%;
+}
+
+/* 목록보기 버튼 */
+.list-btn {
+    position:relative;
+    left:10%;
+    transform: translateX(-50%);
+    margin-right: 3%;
+    width:70px;
+    height:25px;
+    background: #7C96C9;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.list-btn:active {
+    background-color: #5872A5;
+}
+
+/* 글 작성하기 버튼 */
+.write-btn {
+    position:relative;
+    left:9%;
+    transform: translateX(-50%);
+    margin-right: 4%;
+    width:80px;
+    height:25px;
+    background: #7C96C9;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.write-btn:active {
+    background-color: #5872A5;
+}
+
+/* 3. 페이징 번호 처리 */
+.content-foot-foot {
+    background-color: #f9f7f9;
+    padding: 10px 15px;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+}

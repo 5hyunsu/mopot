@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 전체 CSS */
+footer {
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	height: 130px;
+	font-family: 'GmarketSansMedium';
+	font-size: 13px;
+	background-color: #7C96C9;
+}
+
+/* GitHub 태그 */
+#foot-link a:link { color: black; }
+#foot-link a:visited { color: white; }
+
+/* footer 내용 줄바꿈 */
+#foot-span span {
+	display: block;
+}
+
+/* footer 내용 위치 */
+.foot-body {
+	display: flow-root;
+	margin-top: 10%;
+}

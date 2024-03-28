@@ -1,0 +1,419 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 페이지 전체 적용 */
+.content-detail {
+    width: 800px;
+    margin: 0 auto;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+
+/* 컨테이너 (전체 너비 800px) */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Title : 상 세 보 기 */
+.content-detail-title {
+}
+
+/* 이전글, 다음글 버튼 */
+.content-detail-prevnext {
+    text-align: right;
+}
+
+
+/* 테이블 시작 */
+.content-detail-body {
+    border : 0px solid #7C96C9;
+}
+
+/* 속성 - 중앙, 회색 처리 */
+.conNo, .conCategory, .conTitle, .conWriter, .conCreate, .conModify, .conCount, .conDetail, .conTag{
+    background-color: #7C96C9;
+    text-align: center;
+    width:25%;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+/* 1-(1) 번호(No)+ 번호 입력칸 */
+.conNo {
+    width: 100%;
+}
+
+#conNoInput {
+    width: 100%;
+    border-width: 0;
+}
+
+#conNoInput:focus { outline: none }
+
+/* 1-(2) 분류(Category) + 분류 입력칸 */
+.conCategory {
+    width: 100%;
+}
+
+.conCategoryInput {
+    /*-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;*/
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: #444;
+    background-color: #fff;
+
+    margin: 0 auto;
+    border: none;
+    padding: 3px;
+
+    text-align: center;
+}
+
+.conCategoryInput:focus {
+    outline: none;
+}
+
+.conCategoryInput:disabled {
+    opacity: 0.5;
+}
+
+/* 2 제목(Title) + 입력칸 */
+.conTitle {
+    width:100%;
+}
+
+#conTitleInput {
+    width: 99%;
+    padding: 4px;
+    border: none;
+}
+
+#conTitleInput:focus {
+    outline-color: #A0BAED;
+}
+
+/* 3-(1) 작성자(Writer) + 입력칸 */
+.conWriter {
+    /* width:100%; */
+}
+
+#conWriterInput {
+    width: 90%;
+    padding: 4px;
+    border: none;
+}
+
+#conWriterInput:focus {
+    outline: none;
+}
+
+/* 3-(2) 조회수(Count) + 입력칸 */
+.conCount {
+    /* width:100%; */
+}
+
+#conCountInput {
+    border-width: 0;
+    /* width:100%; */
+}
+
+#conCountInput:focus {
+    outline: none;
+}
+
+/* 4-(1) 작성일(Create) + 입력칸 (읽기만가능 readonly) */
+.conCreate {
+    /* width:100%; */
+}
+
+#conCreateInput {
+    /* width:100%; */
+    border-width: 0;
+}
+
+#conCreateInput:focus {
+    outline: none;
+}
+
+/* 4-(2) 수정일(Modify) + 입력칸 (읽기만가능 readonly) */
+.conModify {
+    /* width:100%; */
+}
+
+#conModifyInput {
+    /* width:100%; */
+    border-width: 0;
+}
+
+#conModifyInput:focus {
+    outline: none;
+}
+
+/* 5 내용(Detail) + 입력칸 */
+.conDetail {
+    width: 100%;
+}
+
+#conDetailInput {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+#conDetailInput:focus {
+    outline-color: #A0BAED;
+}
+
+/* 6 태그(Tag) + 입력칸 */
+.conTag {
+    width: 100%;
+}
+
+#conTagInput {
+    width: 99%;
+    padding: 4px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+#conTagInput:focus {
+    outline-color: #A0BAED;
+}
+
+/* 7 버튼 (수정, 목록, 글쓰기, 삭제) */
+#button {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+    border-color: transparent;
+}
+
+.conWriterMore-btn, .modify-btn, .list-btn, .write-btn, .delete-btn:hover, .heart-btn, .reply-btn {
+    cursor: pointer;
+}
+
+/* 8 버튼 (작성자 게시글 더보기 ) */
+#conWriterMore {
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* 작성자 게시글 더보기 버튼 */
+.conWriterMore-btn {
+    background-color: #D4F4FA;
+    color: black;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 14px;
+}
+
+/* 수정 */
+.modify-btn {
+    background-color: #7C96C9;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    border-color: transparent;
+}
+
+/* 목록 */
+.list-btn {
+    background-color: #7C96C9;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    border-color: transparent;
+}
+
+/* 글쓰기 */
+.write-btn{
+    background-color: #7C96C9;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    border-color: transparent;
+}
+
+/* 삭제 */
+.delete-btn {
+    background-color: #7C96C9;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    border-color: transparent;
+}
+
+/* 댓글 */
+.reply-btn{
+    background-color: #7C96C9;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+/* 좋아요 하트 버튼 */
+.heart-btn {
+    position: relative;
+    width: 115px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    padding: 7px;
+    display: flex;
+    border: 2px solid #eae2e1;
+    border-radius: 5px;
+}
+
+.content.heart-active {
+    border-color: #f9b9c4;
+    background: #fbd0d8;
+}
+.heart {
+    position: absolute;
+    background: url("../../img/SHO/img.png") no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%,-50%);
+}
+
+.text {
+    font-size: 16px;
+    margin-left: 25px;
+    margin-right: 5px;
+    color: grey;
+}
+
+.numb:before {
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: #9C9496;
+}
+
+.numb.heart-active:before {
+    color: #000;
+}
+
+.text.heart-active {
+    color: #000;
+}
+
+.heart.heart-active {
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+}
+
+@keyframes animate {
+    0%{ background-position: left; }
+    100%{ background-position: right; }
+}
+
+/* 댓글 부분  */
+
+/* 댓글 작성 */
+.reply-write {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.reply-head {
+    width: 800px;
+    margin: 0 auto;
+    text-align: "center";
+}
+
+.reply-content {
+    width: 85%;
+    resize: none;
+}
+
+/* 댓글 리스트 출력 */
+.reply-box {
+    width: 100%;
+}
+
+.reply-list {
+}
+/* 댓글 박스처리 */
+.reply-detail {
+    text-align: left;
+}
+
+.replyname {
+    text-align: center;
+    width: 15%;
+    vertical-align: middle;
+}
+
+.replydetail {
+    width: 80%;
+}
+
+#reDeatil {
+    width: 98%;
+    font-size: 15px;
+    border: none;
+}
+
+.reTime {
+    width: 50%;
+    font-size: 12px;
+}
+
+.reply-box-button {
+    text-align: right;
+}
+
+/* 대댓글달기 */
+
+/* 대댓글 입력창*/
+#reReDetail {
+    height: 4em;
+    width: 50em;
+}
+
+/* 대댓글 띄어쓰기 빈공간 */
+.invisible-space {
+    visibility: hidden;
+}
+
+/* 대댓글 화살표  오른쪽, 상단 고정*/
+.reply1 {
+    text-align: right;
+    vertical-align: top;
+    font-size: 20px;
+}
+
+/* .arrow{
+   object-fit: scale-down;
+} */
+
+.kakaoprofile {
+    vertical-align: middle;
+}
