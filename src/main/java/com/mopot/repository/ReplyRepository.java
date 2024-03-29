@@ -15,8 +15,6 @@ public interface ReplyRepository extends JpaRepository<Reply, Long> {
     List<Reply> findAllByRefCnoOrderByRefDescReStepAsc(Long conNo);
 
 
-
-
     Optional<Reply> findFirstByRefCnoOrderByRefDesc(Long conNo);
 
     // 특정 글(detailForm) 에 대한 최대 ref 값을 찾는 메소드 - reply 대댓글 순위 적용
